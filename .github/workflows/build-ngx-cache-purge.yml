@@ -27,7 +27,6 @@ jobs:
 
     - name: Compile ngx_cache_purge as dynamic module
       run: |
-        git clone https://github.com/FRiCKLE/ngx_cache_purge.git
         cd nginx
         ./configure --with-compat --add-dynamic-module=../ngx_cache_purge
         make modules
