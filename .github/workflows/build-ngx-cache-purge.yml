@@ -32,8 +32,8 @@ jobs:
         make modules
 
     - name: Upload ngx_cache_purge module
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ngx_cache_purge_module
         path: |
-          nginx/objs/
+          nginx/objs/ngx_http_cache_purge_module.so
